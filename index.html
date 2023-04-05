@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +13,42 @@
 </head>
 
 <style>
-
     @import url('https://fonts.googleapis.com/css?family=Roboto');
     @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-    body{
+    body {
         background: linear-gradient(to bottom, #ffffdb, #f2e427);
         font-family: 'Roboto', sans-serif;
     }
 
-    .mi-nombre{
+    * {
+        box-sizing: border-box !important;
+    }
+
+    .mycol {
+        flex: 25% !important;
+        padding: 5px;
+    }
+
+    .mycol img {
+        margin-top: 5px !important;
+    }
+
+    .myrow {
+        display: flex !important;
+        padding: 5px !important;
+        flex-wrap: wrap !important;
+        position: relative;
+    }
+
+    .mi-nombre {
         font-family: 'Fredoka One', cursive;
         font-size: 44px;
     }
 
-
-
+    .myimage {
+        width: 300px;
+    }
 </style>
 
 
@@ -39,17 +60,11 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Mi Portafolio</a>
             </div>
-            <!-- <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div> -->
+
         </div>
     </nav>
 
@@ -72,7 +87,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>Acerca de mí</h2>
-                    <p>Me gusta compartir de mis talentos y pasiones para desenvolverme con las personas, compartir con ellas mis conocimientos y ayudar a los demás a la medida que me sea posible siendo perseverante y congruente con mis valores.</p>
+                    <p>Me gusta compartir de mis talentos y pasiones para desenvolverme con las personas, compartir con
+                        ellas mis conocimientos y ayudar a los demás a la medida que me sea posible siendo perseverante
+                        y congruente con mis valores.</p>
                 </div>
                 <div class="col-md-6">
                     <img src="images/miAvatar.jpeg" alt="Avatar" class="img-responsive">
@@ -83,70 +100,86 @@
 
     <!-- Proyectos -->
     <section id="proyectos">
-        <div class="container">
+        <div class="container container-fluid">
+
             <div class="row">
                 <div class="col-md-12">
                     <h2>Proyectos</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
+
+
+
+            <div class="myrow">
+
+                <div class="mycol">
                     <div class="thumbnail">
                         <img src="images/logoLSMPagWeb.png" alt="Proyecto 1">
                         <div class="caption">
                             <h3>Diseño Proyecto Aprendiendo LSM</h3>
-                            <p>El diseño de una futura página web acerca de juegos interactivos para promover el aprendizaje de Lengua de Señas Mexicana</p>
-                            <a href="https://www.figma.com/proto/JjPXzqhlbrL5RCXfLF50Td/My-LSM-web-app-Project?node-id=1%3A2&starting-point-node-id=1%3A2" class="btn btn-primary">Ver proyecto</a>
+                            <p>El diseño de una futura página web acerca de juegos interactivos para promover el
+                                aprendizaje de Lengua de Señas Mexicana</p>
+                            <a href="https://www.figma.com/proto/JjPXzqhlbrL5RCXfLF50Td/My-LSM-web-app-Project?node-id=1%3A2&starting-point-node-id=1%3A2"
+                                class="btn btn-primary">Ver proyecto</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+
                     <div class="thumbnail">
                         <img src="images/figma.png" alt="Proyecto 2">
                         <div class="caption">
                             <h3>Prototipo applicación de ventas</h3>
-                            <p>Diseño de una aplicación móvil para un negocio de ventas de tazas (Trabajo colaborativo)</p>
-                            <a href="https://www.figma.com/proto/Jgov2VQlvNbrBIwVFnMxXP/Dise%C3%B1oInteractivoPrototipo?scaling=scale-down&page-id=0%3A1&starting-point-node-id=63%3A41&show-proto-sidebar=1&node-id=63%3A92" class="btn btn-primary">Ver proyecto</a>
+                            <p>Diseño de una aplicación móvil para un negocio de ventas de tazas (Trabajo colaborativo)
+                            </p>
+                            <a href="https://www.figma.com/proto/Jgov2VQlvNbrBIwVFnMxXP/Dise%C3%B1oInteractivoPrototipo?scaling=scale-down&page-id=0%3A1&starting-point-node-id=63%3A41&show-proto-sidebar=1&node-id=63%3A92"
+                                class="btn btn-primary">Ver proyecto</a>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-md-4">
+                <div class="mycol">
                     <div class="thumbnail">
                         <img src="images/figma.png" alt="Proyecto 3">
                         <div class="caption">
                             <h3>Prototipo de un punto de venta</h3>
                             <p>Diseño de un punto de venta para una aplicación móvil (Trabajo colaborativo)</p>
-                            <a href="https://www.figma.com/proto/nEAlOVs3hbULY32MedbJ3f/Desarrollo-de-aplicaciones-para-Android-%5BEvidencia-1%5D?node-id=1%3A2&starting-point-node-id=1%3A2" class="btn btn-primary">Ver proyecto</a>
+                            <a href="https://www.figma.com/proto/nEAlOVs3hbULY32MedbJ3f/Desarrollo-de-aplicaciones-para-Android-%5BEvidencia-1%5D?node-id=1%3A2&starting-point-node-id=1%3A2"
+                                class="btn btn-primary">Ver proyecto</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
                     <div class="thumbnail">
                         <img src="images/figma.png" alt="Proyecto 4">
                         <div class="caption">
                             <h3>Modelado de una aplicación móvil para ventas en línea</h3>
-                            <p>Diseño de una aplicación móvil con algunas páginas de ejemplo de navegación dentro de una aplicación de ventas</p>
-                            <a href="https://www.figma.com/file/GlyXvIbiaNfktvTXgbeAx0/Modeling-Design?node-id=0%3A1&t=0r5s7XshwNlzTyIY-1" class="btn btn-primary">Ver proyecto</a>
+                            <p>Diseño de una aplicación móvil con algunas páginas de ejemplo de navegación dentro de una
+                                aplicación de ventas</p>
+                            <a href="https://www.figma.com/file/GlyXvIbiaNfktvTXgbeAx0/Modeling-Design?node-id=0%3A1&t=0r5s7XshwNlzTyIY-1"
+                                class="btn btn-primary">Ver proyecto</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4">
+                <div class="mycol">
                     <div class="thumbnail">
-                        <img src="images/logoDulccini.png" alt="Proyecto 4">
+                        <img src="images/logoDulccini.png" alt="Proyecto 5">
                         <div class="caption">
                             <h3>Proyecto de un sistema de ventas para un emprendimiento local usando Laravel</h3>
-                            <p>Desarrollo de un proyecto de un sistema de ventas para un emprendimiento local en la ciudad de Cancún</p>
-                            <a href="https://github.com/AngelDelgadoMdz/Sistema_Dulccini.git" class="btn btn-primary">Ver proyecto</a>
+                            <p>Desarrollo de un proyecto de un sistema de ventas para un emprendimiento local en la
+                                ciudad de Cancún</p>
+                            <a href="https://github.com/AngelDelgadoMdz/Sistema_Dulccini.git"
+                                class="btn btn-primary">Ver proyecto</a>
                         </div>
                     </div>
                 </div>
-                
 
             </div>
+
         </div>
+
+
+
+
+
     </section>
-    
+
     <!-- Contacto -->
     <!-- <section id="contacto">
         <div class="container">
@@ -166,7 +199,7 @@
             </div>
         </div>
     </section> -->
-    
+
     <!-- Footer -->
     <!-- <footer>
         <div class="container">
@@ -177,9 +210,10 @@
             </div>
         </div>
     </footer> -->
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    </body>
+</body>
+
 </html>
